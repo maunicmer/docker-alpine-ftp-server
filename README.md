@@ -26,7 +26,7 @@ Environment variables:
     --name ftp-ftps-server \
     -p 21:21 \
     -p 21000-21010:21000-21010 \
-    -v ./certs:/etc/vsftpd/cert/
+    -v certs:/etc/vsftpd/cert/ \
     -e USERS="one|1234" \
     -e ADDRESS=<your_local_ip> \
     -e TLS_CERT="/etc/vsftpd/cert/fullchain.pem" \
